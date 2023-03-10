@@ -55,6 +55,8 @@ m = { cmd = "python manage.py migrate", help = "Apply migrations" }
 mk = { cmd = "python manage.py makemigrations", help = "Make migrations" }
 rd = { cmd = "python manage.py reset_db --noinput", help = "Delete and recreate your database" }
 rm = { cmd = "cuzzy rm-migrations {{ project_name }}", help = "Delete all migrations files" }
+a = {cmd = "python manage.py createapps", help = "Create multiple Django apps" }
+
 RD = ["rd", "rm", "mk", "m"] # Reset your database, delete all migrations files, make news migrations for all apps, apply all migrations
 
 # "https://github.com/charliermarsh/ruff"
